@@ -1,0 +1,61 @@
+@media screen and (max-width: 992px){
+  .container{
+    width: 730px;
+  }
+
+  .sidebar, .page{
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sidebar{
+    margin-bottom: 35px;
+  }
+
+  .nav_item{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+
+  .nav_link{
+    text-align: left;
+    border: none;
+    padding-right: 0;
+  }
+
+  .about_left{
+    width: 30%;
+  }
+
+  .about_right{
+    width: 70%;
+  }
+
+  .about_photo{
+    width: 165px;
+    height: 165px;
+  }
+
+
+.contacts{
+  &:hover{
+    .contacts_dropdown{
+      left: 10%;
+      opacity: 1;
+
+    }
+  }
+}
+
+.contacts_triangle{
+  left: 90%;
+}
+
+
+
+  .copyright{
+    font-size: 14px;
+  }
+}

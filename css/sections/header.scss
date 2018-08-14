@@ -1,0 +1,277 @@
+.header {
+    background: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(00, 00, 00, .2);
+    padding-bottom: 9px;
+    margin-bottom: 25px;
+}
+
+.header_left,
+.header_right {
+    float: left;
+    width: 50%;
+    position: relative;
+}
+
+.header_left {
+    padding-top: 9px;
+}
+
+
+.header_right {
+    text-align: right;
+
+    position: relative;
+  }
+
+/*
+    &:hover {
+        .sub-menu {
+            top: 100%;
+        }
+    }
+}
+*/
+
+/*
+.sub-menu {
+
+    /*border: 1px solid #dedede;
+    background-color: #fff;
+    border-radius: 15px;
+    position: absolute;
+    min-width: 200px;
+    min-height: 146px;
+    line-height: 38px;
+    font-family: 'FiraSans-Regular';
+    color: #646464;
+    z-index: 10;
+    top: 9999px;
+    left: 310px;
+    margin-top: 15px;*/
+
+/*
+    position: absolute;
+    margin-top: 20px;
+  right: 0px;
+    top: 9999px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    text-align: left;
+    z-index: 1000;
+}
+
+
+
+.sub-menu::before{
+  content: "";
+  width: 10px;
+  height: 10px;
+border-right: 1px solid #dedede;
+border-bottom: 1px solid #dedede;
+bottom: calc(100% - 5px);
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(-135deg);
+margin-top: -15px;
+left: 50%;
+margin-left: -9px;
+background: #ffffff;
+position: absolute;
+}
+
+.sub-menu:after{
+  content: "";
+  display: block;
+  height: 50px;
+  left: 0px;
+  right: 0px;
+  top:-29px;
+  position: absolute;
+
+
+
+
+}
+
+
+
+.sub-menu_item {
+    border-bottom: 1px solid #eeeeee;
+    text-align: left;
+    padding: 14px 23px;
+}
+
+.sub-menu_item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.sub-menu_link {
+    text-decoration: none;
+    color: #666666;
+}
+
+.sub-menu_ikon {
+    color: #33c1e3;
+    display: inline-block;
+    position: relative;
+    right: 6px;
+}
+
+.contacts {
+    font-weight: 600;
+    color: #32c3e5;
+    text-decoration: none;
+    padding-bottom: 5px;
+    background: url('../img/decor/dotted.png') 0 bottom repeat-x;
+}
+
+.contacts:hover {
+    color: #e85f61;
+    background: url('../img/decor/dotted-hover.png') 0 bottom repeat-x;
+
+
+}
+*/
+
+.contacts{
+  margin-top: 25px;
+  display: inline-block;
+  position: relative;
+
+  &:hover{
+    .contacts_trigger{
+      color: #e85f61;
+      background: url('../img/decor/dotted-hover.png') 0 bottom repeat-x;
+    }
+
+    .contacts_dropdown{
+      left: 50%;
+      opacity: 1;
+
+    }
+
+
+  }
+}
+
+.contacts_trigger{
+  font-weight: 600;
+  color: #32c3e5;
+  text-decoration: none;
+  padding-bottom: 5px;
+  background: url('../img/decor/dotted.png') 0 bottom repeat-x;
+
+}
+
+
+.contacts_dropdown{
+  padding: 15px 20px;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius:10px;
+  position: absolute;
+  top: 100%;
+
+  transform: translateX(-50%);
+  z-index:20;
+  margin-top: 15px;
+  left: -9999px;
+  opacity: 0;
+  transition: opacity .3s;
+
+  &:before{
+    content: "";
+    display: block;
+    left:0;
+    right: 0;
+    height: 30px;
+    top: -30px;
+    position: absolute;
+  }
+}
+
+
+
+.contacts_link{
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: "FiraSans-Light";
+  color: #414141;
+  text-decoration: none;
+  text-align: left;
+  display: block;
+
+  &:hover{
+    color:#e85f61;
+  }
+
+  &:hover{
+    .contacts_ikon{
+      color:#e85f61;
+    }
+  }
+}
+
+.contacts_triangle{
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-width: 0px;
+  border-bottom: 10px solid #dedede;
+  position: absolute;
+  top:-11px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &:before{
+    content:"";
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-top-width: 0px;
+    border-bottom: 10px solid #ffffff;
+    position: absolute;
+    top:2px;
+    left: -6px;
+  }
+}
+
+.contacts_item{
+  padding-bottom: 15px;
+}
+
+.contacts_item:last-child{
+  padding-bottom: 0px;
+}
+
+.contacts_ikon{
+  color: #33c1e3;
+  margin-right: 15px;
+
+
+}
+
+.user_photo {
+    border: 1px solid #bfbfbf;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.user_photo-pic {
+    display: block;
+}
+
+.user_name {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 19px;
+    max-width: 235px;
+    color: #414141;
+}

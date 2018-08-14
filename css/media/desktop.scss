@@ -1,0 +1,20 @@
+@media screen and (max-width: 1200px){
+ .container {
+   width: 940px;
+ }
+
+
+ .contacts{
+   &:hover{
+     .contacts_dropdown{
+       left: 20%;
+       opacity: 1;
+
+     }
+   }
+ }
+
+ .contacts_triangle{
+   left: 60%;
+ }
+}

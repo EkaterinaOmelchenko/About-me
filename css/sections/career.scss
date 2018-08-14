@@ -1,0 +1,133 @@
+.career_left {
+    float: left;
+    width: 220px;
+}
+
+.career_right {
+    float: right;
+    width: 455px;
+}
+
+.career_photo {
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+.career_photo-elem {
+    display: block;
+    max-width: 100%;
+}
+
+.career_list{
+  text-align: right;
+
+}
+
+.career_item{
+  padding-left: 70px;
+}
+
+
+.career_block{
+  border-radius: 10px;
+  background-color:  rgb(255, 255, 255);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  width: 380px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.career_item:first-child .career_block:before, .career_item:last-child .career_block:after{
+display: none;
+}
+
+
+.career_block:after, .career_block:before{
+content: "";
+display: block;
+width: 1px;
+background: #dddddd;
+position: absolute;
+right: 100%;
+margin-right: 20px;
+}
+
+
+
+.career_block:before{
+top:0;
+bottom:50%;
+}
+
+
+.career_block:after{
+  top:50%;
+  bottom:-25px;
+}
+
+.career_item:hover .career_block{
+  background: #33c1e3;
+}
+
+.career_item:hover .career_title{
+color:#ffffff;
+}
+
+.career_item:hover .career_occupation, .career_item:hover .career_time{
+color:#ffffff;
+}
+
+.career_item:hover .career_year{
+  font-weight: 600;
+  color:  #33c1e3;
+}
+
+.career_item:hover .career_year:after{
+  border-color: #94e0f2;
+}
+
+.career_title{
+  font-size: 21px;
+  color:#5a5a5a;
+  margin-bottom: 10px;
+}
+
+.career_occupation, .career_time{
+  font-weight: 300;
+  color: #727272;
+  margin-bottom: 10px;
+}
+
+.career_time{
+  margin-bottom: 0;
+}
+
+.career_year{
+  position: absolute;
+  top: 50%;
+  margin-top: -14px;
+  right:  100%;
+  margin-right: 35px;
+  font-size: 14px;
+  color:#727272;
+  line-height: 28px;
+  z-index: 10;
+}
+
+.career_year:after{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #33c1e3;
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  margin-top: -10px;
+  border: 5px solid #f6f6f6;
+}
